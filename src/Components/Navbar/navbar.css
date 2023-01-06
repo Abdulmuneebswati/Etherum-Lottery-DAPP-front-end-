@@ -1,0 +1,65 @@
+.navbar{
+    background-color: transparent;
+  box-shadow: 5px 5px 7px 4px rgba(87,82,82,0.75);
+    color: white;
+    display: flex;
+   padding: 2px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ .left{
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+    margin-left: 5px; 
+}
+.logoImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   object-fit: cover;
+}
+
+.title{
+    font-size: 24px;
+padding-top: 8px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 10px;
+}
+.listItem{
+    font-size: 22px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 430px) {
+    .navbar{
+        gap: 10px;
+        
+    }
+   .title{
+    font-size: 17px;
+   }
+   .list{
+    flex-direction: column;
+    gap: 0;
+    align-items: start;
+    margin: 0;
+    padding: 2px;
+   }
+   .listItem{
+    padding-top: 0px;
+   font-size: 16px;
+    width: 100%;
+   }
+   .listItem:hover {
+     background-color: yellow;
+   }
+   
+  } 
